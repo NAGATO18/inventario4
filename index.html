@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="interfz_login.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel"></div>
+    <div class="right-panel">
+      <div class="form-box">
+        <h3 class="logo"></h3>
+        <h1>HOLA, <span>BIENVENIDO!</span></h1>
+        <form action="login.php" method="POST">
+          <input type="email" name="gmail" placeholder="Gmail" required />
+          <input type="password" name="contaseña" placeholder="Contraseña" required />
+          <div class="options">
+            <label><input type="checkbox" /> Recordar contraseña</label>
+            <a href="#">¿Olvidaste la contraseña?</a>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="login-btn">Iniciar sesión</button>
+          </div>
+        </form>
+        
+        <!-- Botón para registrarse -->
+        <div class="register-section">
+          <p>¿No tienes una cuenta?</p>
+          <a href="registro.html">
+            <button class="register-btn">Registrarse</button>
+          </a>
+        </div>
+        
+        <div class="social">
+          <div class="icons">
+            <!-- Íconos de redes sociales irían aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

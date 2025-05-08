@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-panel {
+  width: 40%;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.left-panel::before,
+.left-panel::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.left-panel::before {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: -100px;
+  background: linear-gradient(135deg, #8a6bff 0%, #6a45ff 80%);
+}
+
+.left-panel::after {
+  width: 200px;
+  height: 200px;
+  bottom: 15%;
+  right: -50px;
+  background: linear-gradient(135deg, #6a45ff 0%, #5a35ef 80%);
+}
+
+.right-panel {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+/* Caja del formulario */
+.form-box {
+  width: 80%;
+  max-width: 500px;
+  padding: 40px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* Título de bienvenida */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+h1 span {
+  color: #6a11cb;
+  font-weight: 700;
+}
+
+/* Campos de entrada */
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 25px;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  background: #eaeaea;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+}
+
+/* Opciones (recordar contraseña y olvidaste contraseña) */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #6a11cb;
+}
+
+.options a {
+  color: #6a11cb;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Botones */
+.buttons {
+  margin-bottom: 25px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(106, 17, 203, 0.2);
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+
+/* Sección social */
+.social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .left-panel {
+    width: 100%;
+    height: 30vh;
+  }
+  
+  .right-panel {
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .form-box {
+    width: 90%;
+    padding: 30px;
+  }
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.container::before {
+  width: 150px;
+  height: 150px;
+  top: 70%;
+  left: 30%;
+  background: linear-gradient(135deg, #8a6bff 0%, #6a45ff 100%);
+  opacity: 0.6;
+}
+
+.container::after {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  right: 20%;
+  background: linear-gradient(135deg, #6a45ff 0%, #5a35ef 100%);
+  opacity: 0.4;
+}

@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif; /* Fuente legible */
+    background-color: #f0f0f0; /* Fondo claro y sutil */
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    gap: 30px;
+    border: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 470px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Etiquetas más destacadas */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Verde para "AGREGAR" */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 300px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+}
+
+table {
+    width: 1300px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #f2f2f2; /* Encabezados más destacados */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #333; /* Color de texto más oscuro */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #555; /* Color de texto más oscuro */
+}
